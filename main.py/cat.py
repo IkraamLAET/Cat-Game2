@@ -11,14 +11,28 @@ class Cat:
         self.weight = 5
     
     def train(self):
-        print(f"{self.name} is training...")
+        print(f"{self.name} is training ...")
         self.energy -= 5
         self.intelligence += 1
         self.age += 0.1
 
     def feed(self):
-        print(f"{self.name} is eating...")
+        print(f"{self.name} is eating ...")
         self.energy += 1
         self.weight += 1
         self.age += 0.1
+
+    def sleep(self):
+        print(f"{self.name} is training ...")
+        self.energy += 10
+        self.age += 0.1
+
+    def play(self):
+        print(f"{self.name} is playing ...")
+        self.energy -= 5
+        self.weight -= 1
+        self.age -= 0.1
+
+    def stats(self):
+        print(f"\n {self.name}'s stats: \n Energy = {self.energy} \n Intelligence = {self.intelligence} \n Weight = {self.weight}")
 

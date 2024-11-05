@@ -16,5 +16,12 @@ What would you like to do?
 5. Print cat stats."""))
     
     if action == 1:
-        my_cat.train
-        print
+        my_cat.train()
+    elif action == 2:
+        my_cat.feed()
+    elif action == 3:
+        my_cat.play()
+    elif action == 4:
+        my_cat.sleep()
+    elif action == 5:
+        my_cat.stats()
